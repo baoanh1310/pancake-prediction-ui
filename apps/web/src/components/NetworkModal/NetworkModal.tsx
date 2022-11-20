@@ -5,7 +5,7 @@ import { ChainId } from '@pancakeswap/sdk'
 import { useMemo } from 'react'
 import { useNetwork } from 'wagmi'
 import { atom, useAtom } from 'jotai'
-import { SUPPORT_ONLY_BSC } from 'config/constants/supportChains'
+import { SUPPORT_ONLY_BSC, SUPPORT_ZAP } from 'config/constants/supportChains'
 import { UnsupportedNetworkModal } from './UnsupportedNetworkModal'
 import { WrongNetworkModal } from './WrongNetworkModal'
 import { PageNetworkSupportModal } from './PageNetworkSupportModal'
@@ -18,7 +18,7 @@ export const NetworkModal = ({ pageSupportedChains = SUPPORT_ONLY_BSC }: { pageS
   const [dismissWrongNetwork, setDismissWrongNetwork] = useAtom(hideWrongNetworkModalAtom)
 
   const isBNBOnlyPage = useMemo(() => {
-    return pageSupportedChains?.length === 1 && pageSupportedChains[0] === ChainId.BSC
+    return pageSupportedChains?.length === 1 && pageSupportedChains[0] === ChainId.BSC_TESTNET
   }, [pageSupportedChains])
 
   const isPageNotSupported = useMemo(

@@ -33,8 +33,9 @@ export enum Result {
   LIVE = 'live',
 }
 
-export const transformBetResponse = (tokenSymbol) =>
-  tokenSymbol === 'CAKE' ? transformBetResponseCAKE : transformBetResponseBNB
+export const transformBetResponse = (tokenSymbol) => transformBetResponseBNB
+  // tokenSymbol === 'CAKE' ? transformBetResponseCAKE : transformBetResponseBNB
+
 
 export const transformUserResponse = (tokenSymbol) =>
   tokenSymbol === 'CAKE' ? transformUserResponseCAKE : transformUserResponseBNB

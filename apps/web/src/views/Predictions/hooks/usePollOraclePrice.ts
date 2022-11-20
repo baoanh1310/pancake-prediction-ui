@@ -4,7 +4,8 @@ import { Zero } from '@ethersproject/constants'
 import { useConfig } from '../context/ConfigProvider'
 
 const usePollOraclePrice = (seconds = 10) => {
-  const { chainlinkOracleAddress } = useConfig()
+  // const { chainlinkOracleAddress } = useConfig()
+  const chainlinkOracleAddress = '0x2514895c72f50D8bd4B4F9b1110F0D6bD2c97526';
 
   const chainlinkOracleContract = useChainlinkOracleContract(chainlinkOracleAddress, false)
   // Can refactor to subscription later

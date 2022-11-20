@@ -35,10 +35,11 @@ export const SequenceWrapper = styled.div`
 export const CoinSwitcher: React.FC<React.PropsWithChildren<{ isDefaultBnb: boolean; onTokenSwitch: () => void }>> =
   memo(({ isDefaultBnb, onTokenSwitch }) => {
     const onSwitch = useCallback(() => {
-      onTokenSwitch();
+      // onTokenSwitch();
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return <Inner isDefaultBnb={isDefaultBnb} onTokenSwitch={onSwitch} />;
+    // return <Inner isDefaultBnb={isDefaultBnb} onTokenSwitch={() => {}} />;
   });
 
 const Inner: React.FC<React.PropsWithChildren<{ isDefaultBnb: boolean; onTokenSwitch: () => void }>> = memo(

@@ -82,7 +82,7 @@ export const bscTokens = {
     '0x40E46dE174dfB776BB89E04dF1C47d8a66855EB3',
     18,
     'BSCDEFI',
-    'ChainId.BSC Defi blue chips token',
+    'ChainId.BSC_TESTNETDefi blue chips token',
     'https://powerpool.finance/',
   ),
   busd: BUSD_BSC,
@@ -1556,7 +1556,7 @@ export const bscTokens = {
     '0x045c4324039dA91c52C55DF5D785385Aab073DcF',
     18,
     'bCFX',
-    'ChainId.BSC Conflux Token',
+    'ChainId.BSC_TESTNETConflux Token',
     'https://www.confluxnetwork.org/',
   ),
   mx: new ERC20Token(

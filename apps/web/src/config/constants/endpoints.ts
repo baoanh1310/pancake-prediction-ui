@@ -1,7 +1,8 @@
 import { ChainId } from '@pancakeswap/sdk'
 
-export const GRAPH_API_PROFILE = 'https://api.thegraph.com/subgraphs/name/pancakeswap/profile'
-export const GRAPH_API_PREDICTION_BNB = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction-v2'
+export const GRAPH_API_PROFILE = 'https://api.thegraph.com/subgraphs/name/baoanh1310/profile'
+// export const GRAPH_API_PREDICTION_BNB = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction-v2'
+export const GRAPH_API_PREDICTION_BNB = 'https://api.thegraph.com/subgraphs/name/baoanh1310/prediction-v2'
 export const GRAPH_API_PREDICTION_CAKE = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction-cake'
 
 export const SNAPSHOT_BASE_URL = process.env.NEXT_PUBLIC_SNAPSHOT_BASE_URL
